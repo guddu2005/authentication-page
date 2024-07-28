@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Sign up</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .container {
+            height: 380px;
+            text-align: center;
+            background-color: rgb(193, 193, 203);
+            width: 500px;
+
+        }
+
+        form {
+            height: 250px;
+            margin-top: 20px;
+            margin-left: 50px;
+            margin-right: 50px;
+            border-radius: 20px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            background-color: rgb(252, 255, 255);
+        }
+
+        tr,
+        td {
+            text-align: center;
+            padding: 5px;
+        }
+
+        input {
+            width: 250px;
+            height: 30px;
+            padding: 2px;
+            outline:none;
+            background-color: rgba(229, 225, 225, 0.814);
+        }
+
+        button {
+            height: 35px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <button class="signBtn" >signUp</button>
+            <button class="loginBtn">Login</button>
+        </div>
+        <form action="" method="post" class="signup">
+            <h2>Sign Page</h2>
+            <table>
+                <tr class="fname">
+                    <td>
+                        <label for="first_name">First Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="first_name" id="first_name" required placeholder="First Name:">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <label for="password">Password:</label>
+                    </td>
+                    <td>
+                        <input type="password" name="password" id="password" required placeholder="Enter Password">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align:center;">
+                        <button type="submit">Create Account</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <form action=""  method="get" class="LoginPage">
+            <h2>Login Page</h2>
+            <table>
+                <tr class="fname">
+                    <td>
+                        <label for="first_name">First Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="first_name" id="first_name1" required placeholder="First Name:">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">Password:</label>
+                    </td>
+                    <td>
+                        <input type="password" name="password" id="password1" required placeholder="Enter Password">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2" style="text-align:center;">
+                        <button type="submit">Login</button>
+                    </td>
+                </tr>
+            </table>
+        </form> 
+        <div class="responseBox">
+
+        </div>
+       
+    </div>
+</body>
+  
+
+<script src="index.js"></script>
+
+</html>
