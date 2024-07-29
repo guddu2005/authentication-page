@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.heading{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+button{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.intro{
+    text-align: center;
+    margin-top: 10px;
+}
+.pages{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.sign1{
+    filter: blur(2px);
+    background-color: white;
+    position: relative;
+    left:200px;
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    padding:35px ;
+    margin: 20px;
+    border: 1px solid ;
+
+}
+.signIn{
+    z-index: 10;
+    bottom: 20px;
+    background-color: white;
+    position:relative;
+    border: 1px solid ;
+    padding: 35px;
+    height: 450px;
+    border-radius: 20px;
+}
+.sign2{
+    background-color: white;
+    filter: blur(2px);
+    position: relative;
+    right:200px;
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    padding:35px ;
+    margin: 20px;
+    border: 1px solid ;
+}
+#email{
+    border-radius: 20px;
+    border: 1px  solid gray;
+    outline: none;
+    margin-top: 5px;
+    height: 35px;
+    padding-left: 10px;
+    width: 265px;
+}
+#text{
+    border-radius: 20px;
+    border: 1px  solid gray;
+    outline: none;
+    margin-top: 5px;
+    height: 35px;
+    padding-left: 10px;
+    width: 265px;
+    
+}
+#emaillog{
+    border-radius: 20px;
+    border: 1px  solid gray;
+    outline: none;
+    margin-top: 5px;
+    height: 35px;
+    padding-left: 10px;
+    width: 265px;
+}
+.continue{
+    cursor: pointer;
+    margin-top: 20px;
+    width: 280px;
+    border-radius: 20px;
+}
+.after_continue{
+    margin-top: 20px;
+}
+.continuewith{
+    display: flex;
+    flex-direction: column;
+}
+.continue1{
+    cursor: pointer;
+    margin-top: 20px;
+    width: 280px;
+    border-radius: 20px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+}

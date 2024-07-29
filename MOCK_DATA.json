@@ -8002,36 +8002,49 @@
   {
     "id": 1001,
     "first_name": "Guddu",
-    "last_name": "Kumar",
-    "email": "gkazad112006@gmail.com",
-    "gender": "Male",
-    "job_title": "Backend Developer"
+    "password": "guddu123"
   },
   {
-    "id": 1003
+    "id": 1002,
+    "first_name": "guddu"
+  },
+  {
+    "id": 1003,
+    "first_name": "guddu"
   },
   {
     "id": 1004,
-    "first_name": "askhdb",
-    "last_name": "sdnc",
-    "email": "klgu123@gmail.com",
-    "password": "adjochd"
+    "first_name": "Ecommerce",
+    "email": "gkl@123.gamil.com"
   },
   {
     "id": 1005,
-    "first_name": "askhdb",
-    "last_name": "sdnc",
-    "email": "klguddu123@gmail.com",
-    "password": "123456"
+    "first_name": "Ecommerce",
+    "email": "guddu132565@gmail.com"
   },
   {
     "id": 1006,
-    "first_name": "sjcvac",
-    "password": "CVHJQA"
+    "first_name": "Ecommerce",
+    "email": "guddu132565@gmail.com"
   },
   {
     "id": 1007,
-    "first_name": "Guddu",
-    "password": "Guddu@9262"
+    "first_name": "Ecommerce",
+    "email": "guddu132565@gmail.com"
+  },
+  {
+    "id": 1008,
+    "first_name": "Ecommerce",
+    "email": "askjvbaljj414@gmail.com"
+  },
+  {
+    "id": 1009,
+    "first_name": "ksdjbva",
+    "email": "kjfbvskjb@gmail.com"
+  },
+  {
+    "id": 1010,
+    "first_name": "dzlfbvs",
+    "email": "sdjvhwia@gmail.com"
   }
 ]

@@ -21,10 +21,10 @@ app.use(cors());
 
 app.post('/api/users', (req, res) => {
     console.log(typeof (req.body))
-    const { first_name, password } = req.body[0];
+    const { first_name, email } = req.body[0];
     const id = currentId++;
     try {
-        let user = { id, first_name, password };
+        let user = { id, first_name, email };
         users.push(user);
         fs.writeFileSync(dataFilePath, JSON.stringify(users, null, 2));
         return res.status(200).json({ status: "success" });
@@ -35,11 +35,11 @@ app.post('/api/users', (req, res) => {
 });
 
 app.get('/api/users/', (req, res) => {
-    const { first_name, password } = req.query;
+    const { email } = req.query;
     console.log(req.query);
-    const user = users.find(user => user.first_name === first_name && user.password === password);
+    const user = users.find(user => user.email === email );
 
-
+    
     try {
         if (user) {
             return res.status(200).json({ status: "success" });
@@ -52,7 +52,7 @@ app.get('/api/users/', (req, res) => {
     }
 })
 app.delete('/api/users', (req, res) => {
-    const { first_name ,password } = req.query;
+    const { first_name, password } = req.query;
     console.log(req.query);
 
     const userId = users.findIndex(user => user.first_name === first_name && user.password === password);
@@ -60,7 +60,9 @@ app.delete('/api/users', (req, res) => {
 
     try {
         if (userId !== -1) {
-            users.pop(users[userId]);
+            // Use splice to remove the user at the found index
+            users.splice(userId, 1);
+            // console.log('Users array after deletion:', users);
             return res.status(200).json({ status: "success" });
         } else {
             return res.status(404).json({ status: "User Not Found" });
